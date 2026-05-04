@@ -9,19 +9,22 @@
 
 .header .container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
+    justify-content: space-between;
     gap: 20px;
 }
 
 .nav__link{
     display: inline-block;
     padding: 10px 15px;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 500;
     text-decoration: none;
     color: white;
-    border-radius: 50%;
+    border-radius: 100vw;
+    border: 1px solid white;
+    margin-right: 20px;
 }
 
 .nav__link:hover{
@@ -31,3 +34,35 @@
 
 /* Hero sekce */
 
+.hero{
+    background-image: url(images/gradientWawe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1{
+    font-size: 5rem;
+    color: white;
+    text-align: left;
+    margin-left: 90px;
+    margin-bottom: 0;
+}
+
+.hero__title{
+    margin-left: 90px;
+    margin-top: 20px;
+    font-size: 1.25rem;
+    color: whitesmoke;
+}
+
+.hero__line{
+    width: 800px;
+    height: 0.16rem;
+    background: white;
+    margin-top: 1.25rem;
+    margin-left: 45px;
+}
