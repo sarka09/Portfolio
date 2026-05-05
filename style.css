@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    text-decoration: none;
 }
 
 body{
@@ -21,6 +20,11 @@ body{
     /* background: rgba(255, 255, 255, .1); */
     background: skyblue;
     border-radius: 30px;
+    overflow-y: auto;
+}
+
+.container::-webkit-scrollbar{
+    display: none;
 }
 
 header{
@@ -102,8 +106,7 @@ header{
 }
 
 .uvod__img .img__box{
-    position: relative;
-    width: 408px;
+    width: 400px;
     height: 612px;
 }
 
@@ -114,4 +117,72 @@ header{
     display: block;
     object-fit: cover;
 }
+
+/* Sekce o mne */
+
+.omne{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.omne__details h1{
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 55px;
+}
+
+
+.info__box{
+    flex: 1 1 0;
+    padding: 25px;
+    border: 1px solid #fff;
+    border-radius: 12px;
+}
+
+.info__box a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.omne__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    padding: 20px 50px;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    margin-top: 10%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.info__box li, h3{
+    color: #fff;
+    display: block;
+}
+
+.seznam{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.certifikat{
+    text-decoration: underline;
+}
+
+/* Projekty */
+
+.project{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 
