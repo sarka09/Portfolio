@@ -120,14 +120,14 @@ header{
 
 /* Sekce o mne */
 
-.omne{
+.dovednosti{
     min-height: 100%;
     display: flex;
     flex-direction: column;
     color: #fff;
 }
 
-.omne__details h1{
+.dovednosti__details h1{
     margin-left: 90px;
     margin-top: 50px;
     font-size: 55px;
@@ -146,7 +146,7 @@ header{
     color: #fff;
 }
 
-.omne__info{
+.dovednosti__info{
     display: flex;
     flex-direction: row;
     justify-content: center;
