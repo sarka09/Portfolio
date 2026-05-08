@@ -120,62 +120,37 @@ header{
 
 /* Sekce o mne */
 
-.dovednosti{
+.omne{
     min-height: 100%;
-    display: flex;
-    flex-direction: column;
     color: #fff;
+    padding: 50px 5% 0;
+    position: relative;
 }
 
-.dovednosti__details h1{
-    margin-left: 90px;
-    margin-top: 50px;
+.omne__details h1{
+    color: #fff;
     font-size: 55px;
+    margin-bottom: 2rem;
 }
 
-
-.info__box{
-    flex: 1 1 0;
-    padding: 25px;
-    border: 1px solid #fff;
-    border-radius: 12px;
-}
-
-.info__box a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.dovednosti__info{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    gap: 25px;
-    padding: 20px 50px;
+.omne__title{
     line-height: 1.5;
-    font-size: 1.6rem;
-    margin-top: 10%;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    width: 100%;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-.info__box li, h3{
-    color: #fff;
+.minecraft__flower{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
     display: block;
+    object-fit: cover;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
 }
 
-.seznam{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-.certifikat{
-    text-decoration: underline;
-}
 
 /* Projekty */
 
@@ -247,6 +222,65 @@ section.project{
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+/* Sekce dovednosti */
+
+.dovednosti{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.dovednosti__details h1{
+    margin-left: 90px;
+    margin-top: 50px;
+    font-size: 55px;
+}
+
+
+.info__box{
+    flex: 1 1 0;
+    padding: 25px;
+    border: 1px solid #fff;
+    border-radius: 12px;
+}
+
+.info__box a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.dovednosti__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    padding: 20px 50px;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    margin-top: 10%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.info__box li, h3{
+    color: #fff;
+    display: block;
+}
+
+.seznam{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.certifikat{
+    text-decoration: underline;
 }
 
 @media (min-width: 660px){
