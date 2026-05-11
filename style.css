@@ -17,8 +17,8 @@ body{
 .container{
     position: relative;
     height: 100%;
-    background: rgba(255, 255, 255, .1);
-    /* background: skyblue; */
+    /* background: rgba(255, 255, 255, .1); */
+    background: skyblue;
     border-radius: 30px;
     overflow-y: auto;
 }
@@ -301,6 +301,7 @@ section.project{
 
 .kontakt__title{
     font-size: 2rem;
+    justify-content: flex-start;
 }
 
 .kontakt__title__two{
@@ -314,6 +315,44 @@ section.project{
     margin-bottom: 10px;
 }
 
+.form__box label{
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.form__right{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.form__left{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 90px;
+}
+
+.kontakt__line{
+    width: 2px;
+    height: 500px;
+    margin: 40px 0;
+    background: #fff;
+}
+
+.form__layout{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1;
+}
 
 @media (min-width: 660px){
     .project{
