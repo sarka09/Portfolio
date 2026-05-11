@@ -17,8 +17,8 @@ body{
 .container{
     position: relative;
     height: 100%;
-    /* background: rgba(255, 255, 255, .1); */
-    background: skyblue;
+    background: rgba(255, 255, 255, .1);
+    /* background: skyblue; */
     border-radius: 30px;
     overflow-y: auto;
 }
@@ -214,6 +214,8 @@ section.project{
 .project__descriprion{
     margin-bottom: 0;
     font-size: 0.9rem;
+    height: 100px;
+    line-height: 1.4;
 }
 
 .project__image{
@@ -282,6 +284,36 @@ section.project{
 .certifikat{
     text-decoration: underline;
 }
+
+/* Sekce kontakt */
+
+.kontakt{
+    min-height: 100%;
+    display: flex;
+}
+
+.kontakt__details h1{
+    margin-left: 90px;
+    margin-top: 50px;
+    font-size: 55px;
+    color: #fff;
+}
+
+.kontakt__title{
+    font-size: 2rem;
+}
+
+.kontakt__title__two{
+    font-size: 1.5rem;
+}
+
+.form__box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
 
 @media (min-width: 660px){
     .project{
