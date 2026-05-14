@@ -410,6 +410,9 @@ section.project{
         padding: 0 15px;
     }
 
+    .minecraft__flower {
+        display: none;
+    }
 }
 
 @media(min-width: 660px){
