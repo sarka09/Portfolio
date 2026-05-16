@@ -441,8 +441,26 @@ section.project{
 
     /* sekce dovednosti */
 
+    .dovednosti{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 20px;
+    }
+
+    h1{
+        font-size: 1.9rem!important;
+        margin-left: 0!important;
+        display: block;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+
      .dovednosti__detail h1{
-        margin-left: 0;
+        margin-top: 0;
+        padding: 0;
         text-align: center;
         font-size: 2.5rem;
     }
@@ -452,6 +470,7 @@ section.project{
         padding: 15px;
         margin-top: 15px;
         gap: 15px;
+        width: 100%;
     }
 
     .info__box{
@@ -466,7 +485,28 @@ section.project{
 
     .seznam li{
         font-size: 1rem;
-        line-height: 1.4;
+        line-height: 1.5;
+    }
+
+    /* sekce kontakt */
+
+    .kontakt__details h1{
+        margin-left: 0;
+        margin-top: 20px;
+        gap: 20px;
+        padding: 30px 15px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .kontakt .kontakt__icon a{
+        width: 80px;
+        height: 80px;
+        font-size: 2.5rem;
+    }
+
+    .kontakt{
+        min-height: 70vh;
     }
 
 }
