@@ -62,6 +62,8 @@ header{
 
 }
 
+
+
 .uvod{
     display: flex;
     align-items: center;
@@ -166,7 +168,7 @@ section.project{
 }
 
 .project__details h1{
-    margin-left: 90px;
+    margin-left: 5%;
     margin-top: 35px;
     margin-bottom: 0;
     font-size: 55px;
@@ -237,7 +239,7 @@ section.project{
 }
 
 .dovednosti__details h1{
-    margin-left: 90px;
+    margin-left: 5%;
     margin-top: 50px;
     font-size: 55px;
 }
@@ -295,7 +297,7 @@ section.project{
 }
 
 .kontakt__details h1{
-    margin-left: 90px;
+    margin-left: 5%;
     margin-top: 50px;
     font-size: 55px;
     color: #fff;
@@ -518,6 +520,16 @@ section.project{
 
 @media(min-width: 660px) and (max-width: 1099px){
 
+    .uvod, .omne, section.project, .dovednosti, .kontakt{
+        min-height: 100vh;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+    }
+
+    .kontakt{
+        margin-bottom: 0;
+    }
+
      .uvod{
         flex-direction: row;
         justify-content: space-between;
@@ -575,7 +587,7 @@ section.project{
     section.project{
         min-height: 100vh;
         margin-bottom: 20px;
-        margin-bottom: 20rem;
+        margin-bottom: 15rem;
     }
 
     .project__image{
@@ -583,7 +595,7 @@ section.project{
     }
 
     .project__content{
-        height: 240px;
+        height: auto;
     }
 
     .project__description{
@@ -601,6 +613,21 @@ section.project{
     .seznam{
         font-size: 1.1rem;
     }
+
+    .kontakt{
+        min-height: 70vh;
+    }
+
+    .kontakt__icon{
+        gap: 25px;
+    }
+
+    .kontakt .kontakt__icon a{
+        width: 120px;
+        height: 120px;
+        font-size: 4.5rem;
+    }
+
 }
 
 
