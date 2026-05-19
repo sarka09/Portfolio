@@ -138,20 +138,20 @@ header{
 .omne__title{
     line-height: 1.5;
     font-family: sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.65rem;
     margin-bottom: 1rem;
-    max-width: 1100px;
+    max-width: 1300px;
 }
 
 .minecraft__flower{
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     display: block;
     object-fit: cover;
     position: absolute;
-    bottom: 10px;
-    right: 30px;
+    bottom: 8rem;
+    right: 5rem;
 }
 
 
@@ -168,7 +168,6 @@ section.project{
 }
 
 .project__details h1{
-    margin-left: 5%;
     margin-top: 35px;
     margin-bottom: 0;
     font-size: 55px;
