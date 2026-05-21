@@ -158,7 +158,6 @@ header{
 /* Projekty */
 
 section.project{
-    min-height: 100vh;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -216,7 +215,7 @@ section.project{
 .project__description{
     margin-bottom: 0;
     font-size: 0.9rem;
-    height: 100px;
+    height: auto;
     line-height: 1.4;
 }
 
@@ -226,7 +225,7 @@ section.project{
     height: 20rem;
     object-fit: cover;
     display: block;
-    margin-top: 5rem;
+    margin-top: 0rem;
 }
 
 
@@ -426,6 +425,7 @@ section.project{
     }
 
     .project__info{
+        display: flex;
         flex-direction: column;
         gap: 20px;
         padding: 15px;
@@ -450,6 +450,7 @@ section.project{
         flex-direction: column;
         justify-content: center;
         padding: 40px 20px;
+        margin-top: 55rem;
     }
 
     h1{
@@ -510,6 +511,10 @@ section.project{
 
     .kontakt{
         min-height: 70vh;
+    }
+
+    .kontakt__icon {
+        flex-direction: row;
     }
 
 }
@@ -609,6 +614,17 @@ section.project{
     }
 
     /* sekce dovednosti */
+
+    section.dovednosti{
+        height: 100vh;
+        margin-top: 0rem;
+    }
+
+    .dovednosti__details h1{
+        margin-top: 4rem;
+    }
+
+    /* Sekce kontakt */
 
     .seznam{
         font-size: 1.1rem;
