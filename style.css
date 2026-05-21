@@ -7,6 +7,7 @@
 
 body{
     height: 100vh;
+    overflow-x: hidden;
     background: url(images/blue-backround.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -67,7 +68,7 @@ header{
 .uvod{
     display: flex;
     align-items: center;
-    height: 100%;
+    min-height: 100%;
     gap: 50px;
     padding: 50px 5% 0;
     color: #fff;
@@ -114,7 +115,7 @@ header{
 
 .uvod__img .img__box{
     position: absolute;
-    top: 9rem;
+    top: 4rem;
     right: 20%;
     display: block;
     object-fit: cover;
@@ -144,21 +145,21 @@ header{
 }
 
 .minecraft__flower{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     display: block;
     object-fit: cover;
     position: absolute;
-    bottom: 8rem;
-    right: 5rem;
+    bottom: 1rem;
+    right: 1rem;
 }
 
 
 /* Projekty */
 
 section.project{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     border-radius: 12px;
@@ -168,7 +169,7 @@ section.project{
 
 .project__details h1{
     margin-top: 35px;
-    margin-bottom: 0;
+    margin-bottom: 1.5rem;
     font-size: 55px;
     color: #fff;
 }
@@ -232,7 +233,7 @@ section.project{
 /* Sekce dovednosti */
 
 .dovednosti{
-    min-height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     color: #fff;
@@ -240,7 +241,7 @@ section.project{
 }
 
 .dovednosti__details h1{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 55px;
 }
 
@@ -457,7 +458,7 @@ section.project{
         font-size: 1.9rem!important;
         margin-left: 0!important;
         display: block;
-        white-space: nowrap;
+        white-space: normal;
         text-align: center;
     }
 
@@ -645,6 +646,8 @@ section.project{
     }
 
 }
+
+
 
 
 
