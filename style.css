@@ -451,7 +451,7 @@ section.project{
         flex-direction: column;
         justify-content: center;
         padding: 40px 20px;
-        margin-top: 55rem;
+        margin-top: rem;
     }
 
     h1{
@@ -592,8 +592,6 @@ section.project{
 
     section.project{
         min-height: 100vh;
-        margin-bottom: 20px;
-        margin-bottom: 15rem;
     }
 
     .project__image{
