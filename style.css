@@ -142,17 +142,18 @@ header{
     font-size: 1.65rem;
     margin-bottom: 1rem;
     max-width: 1300px;
+    max-width: 85%;
 }
 
 .minecraft__flower{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     display: block;
     object-fit: cover;
     position: absolute;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 0rem;
+    right: 0;
 }
 
 
@@ -417,6 +418,10 @@ section.project{
         display: none;
     }
 
+    .omne__title{
+        max-width: none;
+    }
+
     /* sekce projekty */
     
      .project__details h1{
@@ -574,6 +579,7 @@ section.project{
     .omne__title{
         font-size: 1.1rem;
         padding: 0 50px 0 0;
+        max-width: none;
     }
 
     /* sekce projekty */
