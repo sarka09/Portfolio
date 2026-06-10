@@ -467,7 +467,7 @@ section.project{
     }
 
 
-     .dovednosti__detail h1{
+    .dovednosti__detail h1{
         margin-top: 0;
         padding: 0;
         text-align: center;
@@ -654,40 +654,3 @@ section.project{
 
 
 
-
-/* @media(min-width: 1100px){
-    .project__info{
-        flex-direction: row;
-        align-items: stretch;
-        gap: 20px;
-        margin-bottom: 0;
-        padding: 50px 5%;
-    }
-
-    .project__info .project__image{
-        width: 100%;
-        height: 90px;
-        flex: none;
-        display: flex;
-        object-fit: cover;
-        object-position: center top;
-        display: block;
-        flex-direction: column;
-        background: #fff;
-    }
-
-    .project__info .project{
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-
-    }
-
-    .project__content{
-        flex-grow: 1;
-        background: #fff;
-        color: #333;
-        border-radius:  0 0 12px 12px;
-    }
-
-} */
