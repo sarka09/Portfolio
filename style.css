@@ -520,6 +520,8 @@ section.project{
 
     .kontakt__icon {
         flex-direction: row;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
 }
