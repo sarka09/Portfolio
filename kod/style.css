@@ -1,0 +1,676 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* sirka a viska bude zahrnovat padding i margin aby se neroztahovali */
+
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    /* skryje horizontální posuvník, pokud obsah přesahuje šířku obrazovky */
+
+    background: url(images/blue-backround.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* obrazek bude pokrývat celou obrazovku bez deformace a nebude se opakovat, bude umístěn uprostřed */
+    padding: 50px 5%;
+}
+
+.container{
+    position: relative;
+    height: 100%;
+    background: rgba(255, 255, 255, .1);
+    /* bila barva s pruhlednosti 10% */
+    /* background: skyblue; */
+    border-radius: 30px;
+    overflow-y: auto;
+    /* pokud obsah přesahuje výšku kontejneru, zobrazí se svislý posuvník */
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+    /* skryti hnusneho skroluvaciho posuvniku v pravo */
+}
+
+header{
+    position: absolute;
+    /* vyjme ji z bezneho toku dokumentu a pridelim ji presnou pozici */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* vertikalni zarovnani na stred */
+    z-index: 100;
+    /* urcujevrstvu 100 aby hlavicka byla nad ostatním obsahem */
+}
+
+.logo{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    border-bottom: 2px solid transparent;
+    transition: .5s;
+    /* plynula zmena pro vlastnost border-color, což znamená, že když se uživatel přejede myší přes odkaz nebo když je odkaz aktivní, barva spodního okraje se změní na bílou (#fff) a tato změna bude probíhat plynule během 0,5 sekundy. */
+}
+
+.navbar a:hover,
+.navbar a.active{
+    border-color: #fff;
+
+}
+/* najeti mysi hover a pro aktivni stranku active */
+
+
+.uvod{
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+    gap: 50px;
+    padding: 50px 5% 0;
+    /* 50px nahore 5% po stranach a 0 dole */
+    color: #fff;
+}
+
+.uvod__details h1{
+    font-size: 55px;
+    line-height: 1;
+}
+
+.uvod__details h2{
+    font-size: 32px;
+}
+
+.uvod__details p{
+    margin: 10px 0 20px;
+}
+
+.uvod__details .social__icon{
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+.uvod__details .social__icon a{
+    display: inline-flex;
+    /* chova se jako inline prvek treba text, ale umožňuje nastavit šířku a výšku a zarovná obsah na střed pomocí flexboxu */
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.uvod__details .social__icon a:hover{
+    background: #fff;
+    color: #333;
+}
+
+.uvod__img .img__box{
+    width: 400px;
+    height: 612px;
+}
+
+.uvod__img .img__box{
+    position: absolute;
+    top: 4rem;
+    right: 20%;
+    display: block;
+    object-fit: cover;
+    /* pokud by s obrazech orezaval zachova si svuj pomer stran */
+}
+
+/* Sekce o mne */
+
+.omne{
+    min-height: 100%;
+    color: #fff;
+    padding: 50px 5% 0;
+    position: relative;
+}
+
+.omne__details h1{
+    color: #fff;
+    font-size: 55px;
+    margin-bottom: 2rem;
+}
+
+.omne__title{
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-size: 1.65rem;
+    margin-bottom: 1rem;
+    max-width: 1300px;
+    max-width: 85%;
+}
+
+.minecraft__flower{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    bottom: 0rem;
+    right: 0;
+}
+
+
+/* Projekty */
+
+section.project{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    border: none;
+    padding: 50px 5% 0;
+}
+
+.project__details h1{
+    margin-top: 35px;
+    margin-bottom: 1.5rem;
+    font-size: 55px;
+    color: #fff;
+}
+
+.project__info{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* padding: 20px 50px; */
+    align-items: stretch;
+    margin-top: 0;
+}
+
+.project__info .project{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border-radius: 12px 12px 0 0;
+    border: none;
+    margin-bottom: 0;
+    /* border: 1px solid skyblue; */
+}
+
+.project__content{
+    padding: 20px;
+    background: #fff;
+    border-radius: 0 0 12px 12px;
+    align-items: stretch;
+    flex-grow: 1;
+}
+
+.project__info a{
+    color: #333;
+}
+
+.project__content h2,
+.project__title{
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-size: 1.5rem;
+    line-height: 1.25;
+}
+
+.project__description{
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    height: auto;
+    line-height: 1.4;
+}
+
+.project__image{
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    display: block;
+    margin-top: 0rem;
+}
+
+
+/* Sekce dovednosti */
+
+.dovednosti{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 50px 5% 0;
+}
+
+.dovednosti__details h1{
+    margin-bottom: 1rem;
+    font-size: 55px;
+}
+
+
+.info__box{
+    flex: 1 1 0;
+    padding: 25px;
+    border: 1px solid #fff;
+    border-radius: 12px;
+}
+
+.info__box a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.dovednosti__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    margin-top: 10%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.info__box li, h3{
+    color: #fff;
+    display: block;
+}
+
+.seznam{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.certifikat{
+    text-decoration: underline;
+}
+
+/* Sekce kontakt */
+
+.kontakt{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.kontakt__details h1{
+    margin-left: 5%;
+    margin-top: 50px;
+    font-size: 55px;
+    color: #fff;
+}
+
+.kontakt .kontakt__icon a{
+    display: inline-flex;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 100vw;
+    font-size: 8rem;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: center;
+
+    height: 180px;
+    width: 180px;
+    aspect-ratio: 1/1;
+}
+
+.kontakt .kontakt__icon a:hover{
+    background: #fff;
+    color: #333;
+}
+
+.kontakt__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-grow: 1;
+}
+
+
+@media(max-width: 659px){
+
+    body{
+        height: auto;
+        padding: 20px 3%;
+    }
+
+    .container{
+        height: auto;
+        padding-bottom: 50px;
+    }
+    
+    header{
+        position: relative;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .navbar a{
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+
+ /* uvodni sekce, fotka nahoru text pod ni */
+
+    .uvod{
+        flex-direction: column-reverse;
+        gap: 20px;
+        text-align: center;
+        min-height: 100%;
+        padding: 10px;
+        margin-bottom: 5.5rem;
+    }
+
+    .uvod__img .img__box{
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 260px;
+        margin: 0 20px;
+    }
+
+    .uvod__details h1{
+        font-size: 2.5rem;
+        margin-left: 0;
+    }
+
+    .uvod__details .social__icon{
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    /* sekce o mne a minecraft kvetina */
+
+    .omne{
+        padding: 40px 40px;
+    }
+   
+    h1{
+        font-size: 2.5rem!important;
+    }
+
+    .omne__info p{
+        font-size: 1.1rem;
+        line-height: 1.5;
+        padding: 0 15px;
+    }
+
+    .minecraft__flower {
+        display: none;
+    }
+
+    .omne__title{
+        max-width: none;
+    }
+
+    /* sekce projekty */
+    
+     .project__details h1{
+        margin-left: 0;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .project__info{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .project__info .project{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .project__image{
+        width: 100%;
+        height: 160px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    /* sekce dovednosti */
+
+    .dovednosti{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 20px;
+        margin-top: rem;
+    }
+
+    h1{
+        font-size: 1.9rem!important;
+        margin-left: 0!important;
+        display: block;
+        white-space: normal;
+        text-align: center;
+    }
+
+
+    .dovednosti__detail h1{
+        margin-top: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .dovednosti__info{
+        flex-direction: column;
+        padding: 15px;
+        margin-top: 15px;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .info__box{
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+
+    .info__box h3{
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .seznam li{
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    /* sekce kontakt */
+
+    .kontakt__details h1{
+        margin-left: 0;
+        margin-top: 20px;
+        gap: 20px;
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .kontakt .kontakt__icon a{
+        width: 80px;
+        height: 80px;
+        font-size: 2.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .kontakt{
+        min-height: 70vh;
+    }
+
+    .kontakt__icon {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+}
+
+
+
+
+
+@media(min-width: 660px) and (max-width: 1099px){
+
+    .uvod, .omne, section.project, .dovednosti, .kontakt{
+        min-height: 100vh;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+    }
+
+    .kontakt{
+        margin-bottom: 0;
+    }
+
+     .uvod{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 5% 0;
+        min-height: 100vh;
+    }
+    
+    .uvod__img .img__box{
+        position: relative;
+        top: -2rem;
+        right: 0;
+        width: 250px;
+        height: auto;
+    }
+
+   
+    .uvod__details h1{
+        text-align: left;
+    }
+
+    .uvod__details .social__icon{
+        justify-content: flex-start;
+    }
+
+    /* sekce o mne */
+
+    .minecraft__flower{
+        display: block;
+        width: 100px;
+        height: 100px;
+        bottom: 10px;
+        right: 0;
+    }
+
+    .omne__title{
+        font-size: 1.1rem;
+        padding: 0 50px 0 0;
+        max-width: none;
+    }
+
+    /* sekce projekty */
+
+    .project__info{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+
+    .project__info .project{
+        flex: 0 0 calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    section.project{
+        min-height: 100vh;
+    }
+
+    .project__image{
+        height: 170px;
+    }
+
+    .project__content{
+        height: auto;
+    }
+
+    .project__description{
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .project__details h1{
+        margin: 0;
+        margin-left: 30px;
+    }
+
+    /* sekce dovednosti */
+
+    section.dovednosti{
+        height: 100vh;
+        margin-top: 0rem;
+    }
+
+    .dovednosti__details h1{
+        margin-top: 4rem;
+    }
+
+    /* Sekce kontakt */
+
+    .seznam{
+        font-size: 1.1rem;
+    }
+
+    .kontakt{
+        min-height: 70vh;
+    }
+
+    .kontakt__icon{
+        gap: 25px;
+    }
+
+    .kontakt .kontakt__icon a{
+        width: 120px;
+        height: 120px;
+        font-size: 4.5rem;
+    }
+
+}
+
+
+
+
+
